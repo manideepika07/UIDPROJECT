@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mani Deepika | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2D3142;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: beige;
+            position: relative;
+        }
+        h1 {
+            color: #C47468;
+            font-size: 3rem;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            position: relative;
+            animation: slideUp 2s ease-in-out;
+        }
+        .btn {
+            background-color: #C47468;
+            color: rgb(73, 70, 70);
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            display: inline-block;
+            position: relative;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #a65d54;
+            transform: scale(1.1);
+        }
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        .floating-elements span {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #C47468;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: floatAnimation linear infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes floatAnimation {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements">
+        <span style="top: 10%; left: 20%; animation-duration: 6s;"></span>
+        <span style="top: 50%; left: 70%; animation-duration: 8s;"></span>
+        <span style="top: 30%; left: 40%; animation-duration: 5s;"></span>
+        <span style="top: 80%; left: 60%; animation-duration: 7s;"></span>
+    </div>
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Mani Deepika, a passionate front-end web developer. Explore my work and get in touch!</p>
+        
+        <a href="file:///F:/DEEPIKA/html%20css%20js%20practise/projecthtml.html" 
+   class="btn">Enter into Portfolio</a>
+
+    </div>
+</body>
+</html>
