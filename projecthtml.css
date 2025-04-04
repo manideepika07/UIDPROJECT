@@ -170,9 +170,9 @@ body {
     display: flex;
     justify-content: space-around;
   }
- @media (max-width: 768px) {
-      .nav-links {
-        display: none;
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;     
         flex-direction: column;
         background-color: #333;
         position: absolute;
@@ -180,15 +180,24 @@ body {
         right: 0;
         width: 100%;
         text-align: center;
-      }
-      .nav-links li {
+    }
+
+    .nav-links li {
         display: block;
         padding: 10px 0;
-      }
-      .menu-toggle {
-        display: block;
-      }
-      #menu-toggle:checked ~ .nav-links {
-        display: flex;
-      }
     }
+
+    .menu-toggle {
+        display: block;    
+        cursor: pointer;
+        font-size: 1.5em;  
+        color: #272725;
+        position: absolute; 
+        top: 20px;
+        right: 20px;
+    }
+
+    #menu-toggle:checked + .menu-toggle + .nav-links {
+        display: flex;    
+    }
+}
