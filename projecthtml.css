@@ -200,4 +200,7 @@ body {
     #menu-toggle:checked + .menu-toggle + .nav-links {
         display: flex;    
     }
+    #menu-toggle:checked + .menu-toggle + .nav-links a {
+    color: #007bff; 
+}
 }
