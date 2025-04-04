@@ -170,3 +170,25 @@ body {
     display: flex;
     justify-content: space-around;
   }
+ @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .nav-links li {
+        display: block;
+        padding: 10px 0;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      #menu-toggle:checked ~ .nav-links {
+        display: flex;
+      }
+    }
